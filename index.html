@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOGO Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+    
+    <!-- Box 1: Single Unit -->
+    <div class="box" id="box1">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+        <span>1 Unit</span>
+        <span class="discount">10% Off</span>
+        <span class="price">$10.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Box 2: Two Units (MOST POPULAR) -->
+    <div class="box popular" id="box2">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+        <span>2 Unit</span>
+        <span class="discount">20% Off</span>
+        <span class="price">$18.00 USD</span>
+      </div>
+      <div class="box-content">
+        <!-- Size and Color Options -->
+        <div class="options">
+          <div>
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div>
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box 3: Three Units -->
+    <div class="box" id="box3">
+      <div class="box-header">
+        <input type="radio" name="unit" />
+        <span>3 Unit</span>
+        <span class="discount">30% Off</span>
+        <span class="price">$24.00 USD</span>
+      </div>
+    </div>
+
+    <!-- Total and Add to Cart -->
+    <div class="footer">
+      <span>Free Delivery</span>
+      <span>Total: $18.00 USD</span>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
